@@ -1,0 +1,7 @@
+{ "categories": ["sizes", "crust", "sauce", "cheese", "toppings"],
+  "sizes": {"type": "single", "values": ["Small", "Medium", "Large"]},
+  "crust": {"type": "single", "values": ["Thin", "Boston", "Stuffed"]},
+  "sauce": {"type": "single", "values": ["Traditional", "Garlic", "Zesty", "BBQ"]},
+  "cheese": {"type": "multi", "values": ["Mozzarella", "Montarey Jack", "Cheddar"]},
+  "toppings": {"type": "multi", "values": ["Mushrooms", "Onions", "Green Peppers", "Olives", "Artichoke Hearts", "Sun Dried Tomatoes", "Roasted Garlic"]}
+}
