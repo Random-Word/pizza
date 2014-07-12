@@ -30,12 +30,12 @@
         </div>
         
         <div>
-          <button id="pizza-add-to-order" ng-click="ctrl.addToOrder()">Add to Order</button>
+          <button id="pizza-add-item" ng-click="ctrl.addItem()">Add New Item</button>
         </div>
     
         <div>
           <ul id="pizza-order-list">
-            <li ng-repeat="order in ctrl.orderList" ng-click="ctrl.selectOrder(order)">{{order}}</li>
+            <li ng-repeat="order in ctrl.orderList" ng-click="ctrl.selectOrder(order)">{{order.toString()}}</li>
           </ul>
         </div>
       </div>

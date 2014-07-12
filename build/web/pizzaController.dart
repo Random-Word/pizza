@@ -36,9 +36,9 @@ class PizzaController {
     orderList = new List();
   }
 
-  void addToOrder() {
-    orderList.add(currentOrder);
+  void addItem() {
     currentOrder = new Order(categories);
+    orderList.add(currentOrder);
   }
 
   void selectCategory(Category category) {
@@ -64,6 +64,7 @@ class PizzaController {
   {
     currentOrder = new Order(categories);
     orderInitialized = true;
+    orderList.add(currentOrder);
   }
   
   void _loadData() {

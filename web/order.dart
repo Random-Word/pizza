@@ -35,12 +35,16 @@ class Order {
   String toString() {
     String to_ret = "";
     for (String c in choices.keys) {
-      to_ret=to_ret+c+'\n';
+      to_ret+=c+'\n';
+      num items = 0;
       for (String s in choices[c].keys){
         if (choices[c][s]) {
-          to_ret=to_ret+s+', ';
+          if (items!=0) {to_ret+=', ';}
+          to_ret+=s;
+          items++;
         }
       }
+      if (items==0) {to_ret+='None';}
       to_ret=to_ret+'\n';
     }
     return to_ret;
