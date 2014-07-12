@@ -1,3 +1,5 @@
+library order;
+
 import 'category.dart';
 
 class Order {

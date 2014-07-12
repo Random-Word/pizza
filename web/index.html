@@ -24,7 +24,7 @@
             <span ng-repeat="option in category.options">
               {{option}}: 
               {{ctrl.currentOrder.choices[category.name][option]}}
-              <img alt="No Pizza For You!" ng-src="{{category.imgURLs[$index]}}" ng-click="ctrl.currentOrder.newChoice(category, option)" height=42, width=42>            
+              <img alt="No Pizza For You!" ng-src="assets/{{category.imgURLs[$index]}}" ng-click="ctrl.currentOrder.newChoice(category, option)" height=42 width=42>            
             </span>
           </div>
         </div>
@@ -35,7 +35,10 @@
     
         <div>
           <ul id="pizza-order-list">
-            <li ng-repeat="order in ctrl.orderList" ng-click="ctrl.selectOrder(order)">{{order.toString()}}</li>
+            <li ng-repeat="order in ctrl.orderList" ng-click="ctrl.selectOrder(order)">
+              {{order.toString()}}
+              <img alt="" src="assets/redX.png" ng-click="ctrl.orderList.remove(order)" height=20 width=20>
+            </li>
           </ul>
         </div>
       </div>
