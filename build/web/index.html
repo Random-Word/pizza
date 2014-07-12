@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html ng-app>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizza</title>
+    
+    
+    <script async src="packages/browser/dart.js"></script>
+    
+    <link rel="stylesheet" href="pizza.css">
+  </head>
+  <body pizza-designer ng-cloak>
+    <div ng-switch="ctrl.categoriesLoaded && ctrl.orderInitialized">
+      <div ng-switch-when="false">
+        {{ctrl.message}}
+      </div>
+      <div ng-switch-when="true">
+        <h1>Pizza</h1>
+        <div>
+          {{ctrl.currentOrder}}
+          <div ng-repeat="category in ctrl.category_list">
+            <span ng-repeat="option in category.options">
+              {{option}}: 
+              {{ctrl.currentOrder.choices[category.name][option]}}
+              <img alt="No Pizza For You!" ng-src="{{category.imgURLs[$index]}}" ng-click="ctrl.currentOrder.newChoice(category, option)" height=42, width=42>            
+            </span>
+          </div>
+        </div>
+        
+        <div>
+          <button id="pizza-add-to-order" ng-click="ctrl.addToOrder()">Add to Order</button>
+        </div>
+    
+        <div>
+          <ul id="pizza-order-list">
+            <li ng-repeat="order in ctrl.orderList" ng-click="ctrl.selectOrder(order)">{{order}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="packages/shadow_dom/shadow_dom.min.js"></script>
+    <script type="application/dart" src="pizza.dart"></script>
+    <script type="text/javascript" src="packages/browser/dart.js"></script>
+  </body>
+</html>

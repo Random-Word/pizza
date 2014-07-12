@@ -1,0 +1,7 @@
+[
+{"name": "sizes", "type": "radio", "values": ["Small", "Medium", "Large"], "imgURLs": ["fonzie1.jpg","Shadowrun.gif","Lenna.png"]},
+{"name": "crust", "type": "radio", "values": ["Thin", "Boston", "Stuffed"], "imgURLs": ["fonzie1.jpg","Lenna.png","Shadowrun.gif"]},
+{"name": "sauce", "type": "checkbox", "values": ["Traditional", "Garlic", "Zesty", "BBQ"], "imgURLs": ["Lenna.png", "fonzie1.jpg", "Shadowrun.gif", "fonzie1.jpg"]},
+{"name": "cheese", "type": "checkbox", "values": ["Mozzarella", "Montarey Jack", "Cheddar"], "imgURLs": ["Shadowrun.gif", "fonzie1.jpg", "Lenna.png"]},
+{"name": "toppings", "type": "checkbox", "values": ["Mushrooms", "Onions", "Green Peppers", "Olives", "Artichoke Hearts", "Sun Dried Tomatoes", "Roasted Garlic"], "imgURLs": ["fonzie1.jpg", "Shadowrun.gif", "fonzie1.jpg", "Lenna.png", "Shadowrun.gif", "fonzie1.jpg", "Lenna.png"]}
+]
