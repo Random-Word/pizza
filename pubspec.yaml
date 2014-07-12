@@ -1,5 +1,7 @@
-name: pizza2
-description: A sample web application
+name: pizza
+description: A sample pizza application
 dependencies:
+  angular: any
   browser: any
   polymer: any
+  shadow_dom: any

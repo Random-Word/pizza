@@ -4,15 +4,19 @@ packages:
   analyzer:
     description: analyzer
     source: hosted
-    version: "0.15.7"
+    version: "0.13.6"
+  angular:
+    description: angular
+    source: hosted
+    version: "0.12.0"
   args:
     description: args
     source: hosted
-    version: "0.11.0+1"
+    version: "0.10.0+2"
   barback:
     description: barback
     source: hosted
-    version: "0.14.0+3"
+    version: "0.13.0"
   browser:
     description: browser
     source: hosted
@@ -20,19 +24,23 @@ packages:
   code_transformers:
     description: code_transformers
     source: hosted
-    version: "0.1.4+2"
+    version: "0.1.4+1"
   collection:
     description: collection
     source: hosted
     version: "0.9.4"
-  csslib:
-    description: csslib
+  di:
+    description: di
     source: hosted
-    version: "0.10.0+1"
+    version: "0.0.40"
   html5lib:
     description: html5lib
     source: hosted
-    version: "0.11.0+1"
+    version: "0.10.0"
+  intl:
+    description: intl
+    source: hosted
+    version: "0.9.10"
   logging:
     description: logging
     source: hosted
@@ -40,19 +48,31 @@ packages:
   observe:
     description: observe
     source: hosted
-    version: "0.10.1+2"
+    version: "0.10.0"
   path:
     description: path
     source: hosted
     version: "1.2.1"
+  perf_api:
+    description: perf_api
+    source: hosted
+    version: "0.0.8"
   polymer:
     description: polymer
     source: hosted
-    version: "0.11.0+5"
+    version: "0.10.0-pre.12"
   polymer_expressions:
     description: polymer_expressions
     source: hosted
-    version: "0.11.2"
+    version: "0.10.0"
+  route_hierarchical:
+    description: route_hierarchical
+    source: hosted
+    version: "0.4.21"
+  shadow_dom:
+    description: shadow_dom
+    source: hosted
+    version: "0.10.0"
   smoke:
     description: smoke
     source: hosted
@@ -65,14 +85,10 @@ packages:
     description: stack_trace
     source: hosted
     version: "0.9.3+2"
-  string_scanner:
-    description: string_scanner
-    source: hosted
-    version: "0.0.3"
   template_binding:
     description: template_binding
     source: hosted
-    version: "0.11.0"
+    version: "0.10.0"
   utf:
     description: utf
     source: hosted
@@ -80,8 +96,8 @@ packages:
   web_components:
     description: web_components
     source: hosted
-    version: "0.4.0"
+    version: "0.3.5+1"
   yaml:
     description: yaml
     source: hosted
-    version: "1.1.1"
+    version: "0.9.0+2"
